@@ -29,6 +29,19 @@
       <a href="mailto:tcrai.dev@gmail.com">Kontakt</a>
     </div>
   </div>
+  <!-- --- Demo-Button + JavaScript --- -->
+<button id="demo">Demo starten</button>
+<pre id="output"></pre>
+
+<script>
+  document.getElementById("demo").addEventListener("click", () => {
+    const out = document.getElementById("output");
+    out.textContent = "TCR.AI reagiert ... 👀";
+    setTimeout(() => {
+      out.textContent = "Antwort von TCR.AI: Hallo Welt 🌍";
+    }, 1000);
+  });
+</script>
 </body>
 </html>
 
