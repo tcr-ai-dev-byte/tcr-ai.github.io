@@ -28,23 +28,24 @@
       <a href="https://github.com/tcr-ai" target="_blank">GitHub</a>
       <a href="mailto:tcrai.dev@gmail.com">Kontakt</a>
     </div>
-  </div>
-<!-- --- Demo-Button + JavaScript --- -->
-<div class="demo-section">
-  <button id="demo">Demo starten</button>
-  <pre id="output"></pre>
-</div>
 
-<script>
-  document.getElementById("demo").addEventListener("click", () => {
-    const out = document.getElementById("output");
-    out.textContent = "TCR.AI reagiert ... 👀";
-    setTimeout(() => {
-      out.textContent = "Antwort von TCR.AI: Hallo Welt 🌍";
-    }, 1000);
-  });
-</script>
-</script>
+    <!-- --- Demo-Button + Ausgabe --- -->
+    <div class="demo-section">
+      <button id="demo">Demo starten</button>
+      <pre id="output"></pre>
+    </div>
+  </div> <!-- Ende container -->
+
+  <!-- --- JavaScript für den Button --- -->
+  <script>
+    document.getElementById("demo").addEventListener("click", () => {
+      const out = document.getElementById("output");
+      out.textContent = "TCR.AI reagiert ... 👀";
+      setTimeout(() => {
+        out.textContent = "Antwort von TCR.AI: Hallo Welt 🌍";
+      }, 1000);
+    });
+  </script>
 </body>
 </html>
 
