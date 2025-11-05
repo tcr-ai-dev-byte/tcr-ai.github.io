@@ -37,15 +37,27 @@
   </div> <!-- Ende container -->
 
   <!-- --- JavaScript für den Button --- -->
-  <script>
-    document.getElementById("demo").addEventListener("click", () => {
-      const out = document.getElementById("output");
-      out.textContent = "TCR.AI reagiert ... 👀";
-      setTimeout(() => {
-        out.textContent = "Antwort von TCR.AI: Hallo Welt 🌍";
-      }, 1000);
-    });
-  </script>
+ <script>
+  // Elemente holen
+  const btn = document.getElementById("demo");
+  const out = document.getElementById("output");
+
+  btn.addEventListener("click", () => {
+    // Button sperren + Lade-Text
+    btn.disabled = true;
+    btn.textContent = "Lädt …";
+    out.textContent = "TCR.AI reagiert ... 👀";
+
+    // Demo-Antwort simulieren (1s)
+    setTimeout(() => {
+      out.textContent = "Antwort von TCR.AI: Hallo Welt 🌍";
+      // Button wieder freigeben
+      btn.disabled = false;
+      btn.textContent = "Demo starten";
+    }, 1000);
+  });
+</script>
+
 </body>
 </html>
 
