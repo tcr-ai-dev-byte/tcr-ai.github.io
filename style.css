@@ -84,3 +84,32 @@ h1 span {
     transform: none;           /* Ende: normale Position */
   }
 }
+/* --- Demo-Section unten auf der Seite --- */
+.demo-section {
+  margin-top: 80px;           /* Abstand nach oben */
+  text-align: center;         /* Alles zentrieren */
+}
+
+#demo {
+  background: linear-gradient(90deg, #facc15, #fde047); /* Gold-Gelb Verlauf */
+  color: #1a1a1a;             /* Dunkler Text */
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;        /* Runde Form */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(250, 204, 21, 0.4);
+}
+
+#demo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(250, 204, 21, 0.8);
+}
+
+#output {
+  margin-top: 20px;           /* Platz über der Ausgabe */
+  color: #fde047;             /* Helles Gelb */
+  font-family: monospace;
+}
